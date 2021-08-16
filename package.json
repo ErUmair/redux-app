@@ -1,45 +1,49 @@
 {
-  "name": "demo-application",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.2.0",
-    "axios": "^0.21.1",
-    "history": "^4.10.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0-rc.1",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^4.0.2",
-    "react-use": "^17.2.4",
-    "redux": "^4.0.0",
-    "redux-logger": "^4.0.0",
-    "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "http-proxy-middleware": "^1.0.3",
-    "postcss": "^7.0.36",
-    "react-scripts": "latest",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "demo-application",
+    "homepage": "https://UMAIR9665.github.io/redux-app/",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "@craco/craco": "^6.2.0",
+        "axios": "^0.21.1",
+        "gh-pages": "^3.2.3",
+        "history": "^4.10.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-redux": "^7.1.0-rc.1",
+        "react-router-dom": "^5.0.1",
+        "react-scripts": "^4.0.2",
+        "react-use": "^17.2.4",
+        "redux": "^4.0.0",
+        "redux-logger": "^4.0.0",
+        "redux-promise": "^0.6.0",
+        "redux-thunk": "^2.3.0"
+    },
+    "scripts": {
+        "start": "craco start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "http-proxy-middleware": "^1.0.3",
+        "postcss": "^7.0.36",
+        "react-scripts": "latest",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
